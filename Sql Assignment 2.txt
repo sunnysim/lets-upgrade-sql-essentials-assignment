@@ -1,0 +1,24 @@
+-- create the students table
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  age INTEGER,
+  gender TEXT
+);
+
+-- insert three rows of data
+INSERT INTO students (name, age, gender) VALUES ('John', 20, 'Male');
+INSERT INTO students (name, age, gender) VALUES ('Alice', 22, 'Female');
+INSERT INTO students (name, age, gender) VALUES ('Bob', 21, 'Male');
+
+-- retrieve all rows from the students table
+SELECT * FROM students;
+
+-- update the name of the student with id=2 to "Janet"
+UPDATE students SET name = 'Janet' WHERE id = 2;
+
+-- delete the row with id=3 from the students table
+DELETE FROM students WHERE id = 3;
+
+-- retrieve all rows from the students table again
+SELECT * FROM students;
